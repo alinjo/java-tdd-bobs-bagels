@@ -9,6 +9,7 @@ public class Basket {
 
     public Basket() {
         this.baskets = new ArrayList<>();
+        this.capacity = 2;
     }
 
     public boolean add(String bagel){
@@ -19,7 +20,7 @@ public class Basket {
         return this.baskets.remove(bagel);
     }
 
-    public boolean IsFull(){
-        return this.baskets.size() == this.capacity;
+    public boolean IsFull() {
+        return this.baskets.size() >= this.capacity;
     }
 }
