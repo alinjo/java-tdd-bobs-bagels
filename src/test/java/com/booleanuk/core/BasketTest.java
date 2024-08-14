@@ -13,8 +13,17 @@ class BasketTest {
     @Test
     public void testAddBagel() {
 
-    Basket basket = new Basket();
-    Assertions.assertTrue(basket.add("bagel1"));
+        Basket basket = new Basket();
+        Assertions.assertTrue(basket.add("bagel1"));
+
     }
 
+    @Test
+    public void testRemoveBagel() {
+
+        Basket basket = new Basket();
+        basket.add("bagel1");
+        Assertions.assertTrue(basket.remove("bagel1"));
+
+    }
 }

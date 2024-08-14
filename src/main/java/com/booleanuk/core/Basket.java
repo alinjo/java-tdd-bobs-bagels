@@ -14,4 +14,8 @@ public class Basket {
         return this.baskets.add(bagel);
     }
 
+    public boolean remove(String bagel){
+        return this.baskets.remove(bagel);
+    }
+
 }
