@@ -5,6 +5,7 @@ import java.util.ArrayList;
 
 public class Basket {
     public ArrayList<String> baskets;
+    private int capacity;
 
     public Basket() {
         this.baskets = new ArrayList<>();
@@ -18,4 +19,7 @@ public class Basket {
         return this.baskets.remove(bagel);
     }
 
+    public boolean IsFull(){
+        return this.baskets.size() == this.capacity;
+    }
 }

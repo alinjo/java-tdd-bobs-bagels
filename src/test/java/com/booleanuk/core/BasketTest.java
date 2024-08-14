@@ -23,7 +23,20 @@ class BasketTest {
 
         Basket basket = new Basket();
         basket.add("bagel1");
+
         Assertions.assertTrue(basket.remove("bagel1"));
+
+    }
+
+    @Test
+    public void testIsFull() {
+
+        Basket basket = new Basket();
+
+        Assertions.assertTrue(basket.add("bagel1"));
+        Assertions.assertTrue(basket.add("bagel2"));
+
+        Assertions.assertTrue(basket.IsFull());
 
     }
 }
