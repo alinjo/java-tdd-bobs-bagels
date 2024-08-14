@@ -10,17 +10,11 @@ class BasketTest {
 
     ArrayList<String> baskets;
 
-    public BasketTest(){
-        this.baskets = new ArrayList<>();
-        this.baskets.add("Bagel1");
-        this.baskets.add("Bagel2");
-    }
-
     @Test
     public void testAddBagel() {
 
     Basket basket = new Basket();
-    Assertions.assertFalse(basket.add(baskets, ""));
+    Assertions.assertTrue(basket.add("bagel1"));
     }
 
 }
