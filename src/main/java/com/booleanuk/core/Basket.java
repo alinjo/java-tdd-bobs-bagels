@@ -13,7 +13,10 @@ public class Basket {
     }
 
     public boolean add(String bagel){
-        return this.baskets.add(bagel);
+        if (this.baskets.size() < this.capacity) {
+            return this.baskets.add(bagel);
+        }
+        return false;
     }
 
     public boolean remove(String bagel){
@@ -23,4 +26,9 @@ public class Basket {
     public boolean IsFull() {
         return this.baskets.size() >= this.capacity;
     }
+
+    public void setCapacity(int capacity) {
+        return;
+    }
+
 }

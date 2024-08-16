@@ -39,4 +39,22 @@ class BasketTest {
         Assertions.assertTrue(basket.IsFull());
 
     }
+
+    @Test
+    public void testSetCapacity() {
+        Basket basket = new Basket();
+
+        Assertions.assertTrue(basket.add("bagel1"));
+        Assertions.assertTrue(basket.add("bagel2"));
+        Assertions.assertFalse(basket.add("bagel3"));
+
+        basket.setCapacity(3);
+
+        Assertions.assertTrue(basket.add("bagel3"));
+
+    }
+
+    
+
+
 }

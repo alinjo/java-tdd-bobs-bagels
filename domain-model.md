@@ -1,5 +1,4 @@
 
-
 | Classes  | Methods                     | Scenario                       | Outputs |
 |----------|-----------------------------|--------------------------------|---------|
 | `Basket` | `AddBagel(String bagel)`    | Add bagel                      | bool    |
