@@ -54,7 +54,13 @@ class BasketTest {
 
     }
 
-    
+    @Test
+    public void removeBagel() {
+        Basket basket = new Basket();
 
+        basket.add("bagel1");
 
+        Assertions.assertEquals(1, basket.removeBagel("bagel1"));
+        Assertions.assertEquals(-1, basket.removeBagel("bagel2"));
+    }
 }

@@ -8,28 +8,48 @@ public class Basket {
     private int capacity;
 
     public Basket() {
+
         this.baskets = new ArrayList<>();
         this.capacity = 2;
+
     }
 
-    public boolean add(String bagel){
+    public boolean add(String bagel) {
+
         if (this.baskets.size() < this.capacity) {
+
             return this.baskets.add(bagel);
+
         }
+
         return false;
     }
 
-    public boolean remove(String bagel){
+    public boolean remove(String bagel) {
+
         return this.baskets.remove(bagel);
+
     }
 
     public boolean IsFull() {
+
         return this.baskets.size() >= this.capacity;
+
     }
 
     public void setCapacity(int capacity) {
+
         if (capacity > 0) {
+
             this.capacity = capacity;
+
+        }
+    }
+
+    public int removeBagel(String bagel) {
+
+        return 0;
+
         }
     }
 
