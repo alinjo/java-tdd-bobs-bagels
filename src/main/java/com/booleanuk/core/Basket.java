@@ -48,7 +48,14 @@ public class Basket {
 
     public int removeBagel(String bagel) {
 
-        return 0;
+        if (this.baskets.contains(bagel)) {
+
+            this.baskets.remove(bagel);
+            return 1;
+
+        } else {
+
+            return -1;
 
         }
     }
