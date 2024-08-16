@@ -28,7 +28,9 @@ public class Basket {
     }
 
     public void setCapacity(int capacity) {
-        return;
+        if (capacity > 0) {
+            this.capacity = capacity;
+        }
     }
 
 }
